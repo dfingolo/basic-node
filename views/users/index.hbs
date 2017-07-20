@@ -1,0 +1,22 @@
+<h1>Users</h1>
+
+<table class="table table-bordered table-condensed table-hover table-striped">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>E-mail</th>
+      <th>Birth Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each users}}
+      <tr>
+        <td>{{first_name}}</td>
+        <td>{{last_name}}</td>
+        <td>{{email}}</td>
+        <td>{{birth_date}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
