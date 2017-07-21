@@ -18,6 +18,7 @@ module.exports = conn.define('users', {
   },
   email: {
     type: Sequelize.STRING,
+    unique: true,
     validate: {
       isEmail: true,
       notNull: true,
